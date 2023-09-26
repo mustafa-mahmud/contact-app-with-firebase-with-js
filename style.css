@@ -1,0 +1,131 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* layout */
+#app-layout {
+  display: flex;
+}
+
+#app-layout #left-col {
+  flex: 1;
+}
+
+#app-layout #right-col {
+  flex: 3;
+}
+
+/* header */
+header {
+  background-color: #2e3e49;
+  color: #fff;
+  height: 65px;
+  display: flex;
+}
+
+header .left {
+  flex: 1;
+}
+
+header .title {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+header .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+button {
+  padding: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: orange;
+  border: none;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: olive;
+  cursor: pointer;
+}
+
+/* modal window */
+#modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+}
+
+#modal-overlay #modal {
+  max-width: 550px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#modal-overlay #modal h2 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.input-group {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin: 5px 15px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'] {
+  font-size: 16px;
+  height: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+
+.modal-footer button {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.modal-footer button:nth-child(2) {
+  background-color: #666;
+}
+.modal-footer button:nth-child(2):hover {
+  background-color: #333;
+}
