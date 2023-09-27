@@ -59,6 +59,25 @@ button:hover {
   cursor: pointer;
 }
 
+.msg {
+  font-size: 14px;
+  display: none;
+}
+
+.success {
+  color: green;
+  display: block;
+}
+
+.danger {
+  color: red;
+  display: block;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
 /* modal window */
 #modal-overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -81,6 +100,7 @@ button:hover {
   width: 100%;
   background-color: #fff;
   border-radius: 5px;
+  padding: 1rem;
 }
 
 #modal-overlay #modal h2 {

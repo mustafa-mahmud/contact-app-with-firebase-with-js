@@ -26,46 +26,50 @@
 
     <!-- modal -->
     <div id="modal-overlay">
-      <div id="modal" class="modal">
-        <div class="modal-header">
-          <h2>Add Content</h2>
-          <hr />
-        </div>
-        <div class="modal-content">
-          <div class="row">
-            <div class="input-group">
-              <label>First Name</label>
-              <input type="text" />
+      <form>
+        <div id="modal" class="modal">
+          <div class="modal-header">
+            <h2>Add Content</h2>
+            <p class="msg">Something went wrong...</p>
+            <hr />
+          </div>
+          <div class="modal-content">
+            <div class="row">
+              <div class="input-group">
+                <label>First Name</label>
+                <input type="text" name="fName" required />
+              </div>
+              <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" name="lName" required />
+              </div>
             </div>
-            <div class="input-group">
-              <label>Last Name</label>
-              <input type="text" />
+            <div class="row">
+              <div class="input-group">
+                <label>Age</label>
+                <input type="number" name="age" required />
+              </div>
+              <div class="input-group">
+                <label>Phone</label>
+                <input type="number" name="phone" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" required />
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="input-group">
-              <label>Age</label>
-              <input type="number" />
-            </div>
-            <div class="input-group">
-              <label>Phone</label>
-              <input type="number" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-group">
-              <label>Email</label>
-              <input type="email" />
-            </div>
+          <div class="modal-footer">
+            <button class="close-btn">Close</button>
+            <button class="save-btn" type="submit">Save</button>
           </div>
         </div>
-        <div class="modal-footer">
-          <button class="close-btn">Close</button>
-          <button class="save-btn">Save</button>
-        </div>
-      </div>
+      </form>
     </div>
 
-    <script src="app.js"></script>
+    <script src="firebase-sdk.js" type="module"></script>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
