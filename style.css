@@ -11,6 +11,7 @@ body {
 
 #app-layout #left-col {
   flex: 1;
+  margin-right: 10px;
 }
 
 #app-layout #right-col {
@@ -148,4 +149,73 @@ input[type='email'] {
 }
 .modal-footer button:nth-child(2):hover {
   background-color: #333;
+}
+
+/* contact list */
+#contact-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-list-item {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #999;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.contact-list-item .media {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.contact-list-item .media .two-letters {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.contact-list-item .content {
+  flex: 3;
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-list-item .content .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.contact-list-item .action {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* show single details */
+.show-contact div {
+  margin-bottom: 1rem;
+}
+
+.show-contact div h3 {
+  margin: 0;
+}
+
+.show-contact div p {
+  margin: 0;
+  font-weight: bold;
 }
